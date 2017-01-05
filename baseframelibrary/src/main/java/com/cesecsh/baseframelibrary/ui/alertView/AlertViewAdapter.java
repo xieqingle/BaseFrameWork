@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.cesecsh.ics.R;
+import com.cesecsh.baseframelibrary.R;
 
 import java.util.List;
 

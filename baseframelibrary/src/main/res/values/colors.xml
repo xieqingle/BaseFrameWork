@@ -22,5 +22,8 @@
     <color name="bgColor_alert_button_press">#EAEAEA</color>
     <!--actionsheet模式的取消按钮背景颜色-->
     <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
-
+    <!--toast_layout-->
+    <color name="toast_text_color">#ccffffff</color>
+    <color name="bg_toast">#aa000000</color>
+    <color name="white">#ffffff</color>
 </resources>
