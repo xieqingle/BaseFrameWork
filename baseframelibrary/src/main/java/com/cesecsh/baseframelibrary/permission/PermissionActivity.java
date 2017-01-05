@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.ui;
+package com.cesecsh.baseframelibrary.permission;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,11 +13,10 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 
 import com.cesecsh.baseframelibrary.R;
 import com.cesecsh.baseframelibrary.manager.ActivityManager;
-import com.cesecsh.baseframelibrary.permission.PermissionListener;
+import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +26,7 @@ import java.util.List;
  * on 2017/1/4
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class PermissionActivity extends RxAppCompatActivity {
     private PermissionListener mListener;
     private Context mContext;
     private static final String PACKAGE_URL_SCHEME = "package:"; // 方案

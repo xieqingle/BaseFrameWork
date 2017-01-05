@@ -41,7 +41,7 @@ public class AlertViewAdapter extends BaseAdapter{
         if(view==null){
             LayoutInflater inflater = LayoutInflater.from(parent.getContext());
             view=inflater.inflate(R.layout.item_alertbutton, null);
-            holder=creatHolder(view);
+            holder= createHolder(view);
             view.setTag(holder);
         }
         else{
@@ -50,7 +50,7 @@ public class AlertViewAdapter extends BaseAdapter{
         holder.UpdateUI(parent.getContext(),data,position);
         return view;
     }
-    public Holder creatHolder(View view){
+    public Holder createHolder(View view){
         return new Holder(view);
     }
     class Holder {

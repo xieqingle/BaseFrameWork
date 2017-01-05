@@ -1,4 +1,4 @@
-package com.cesecsh.baseframework;
+package com.cesecsh.test;
 
 import android.Manifest;
 import android.os.Bundle;
@@ -7,12 +7,13 @@ import android.widget.Toast;
 
 import com.cesecsh.baseframelibrary.BuildConfig;
 import com.cesecsh.baseframelibrary.LogHelper.AppLog;
+import com.cesecsh.baseframelibrary.permission.PermissionActivity;
 import com.cesecsh.baseframelibrary.permission.PermissionListener;
-import com.cesecsh.baseframelibrary.ui.BaseActivity;
+import com.cesecsh.baseframework.R;
 
 import java.util.List;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends PermissionActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

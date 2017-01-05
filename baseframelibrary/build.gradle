@@ -33,6 +33,17 @@ dependencies {
     // https://github.com/orhanobut/logger
     compile 'com.orhanobut:logger:1.14'
 
+
+    // Retrofit for rest client
+    // https://github.com/square/retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    // OkHttp logging interceptor
+    // https://github.com/square/okhttp/wiki/Interceptors
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+
     // RxAndroid
     // https://github.com/ReactiveX/RxAndroid
     // https://github.com/ReactiveX/RxJava
@@ -47,6 +58,12 @@ dependencies {
     // https://github.com/trello/RxLifecycle
     compile 'com.trello:rxlifecycle:0.6.1'
     compile 'com.trello:rxlifecycle-components:0.6.1'
+
+    // RxBinding
+    // https://github.com/JakeWharton/RxBinding
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-support-v4:0.4.0'
+    compile 'com.jakewharton.rxbinding:rxbinding-recyclerview-v7:0.4.0'
 
     compile 'com.google.code.gson:gson:2.7'
 }

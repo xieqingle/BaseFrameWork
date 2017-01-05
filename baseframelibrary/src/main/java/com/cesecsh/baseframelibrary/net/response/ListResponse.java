@@ -1,11 +1,13 @@
-package com.cesecsh.baseframelibrary.net;
+package com.cesecsh.baseframelibrary.net.response;
 
 
 import com.cesecsh.baseframelibrary.manager.ActivityManager;
 import com.cesecsh.baseframelibrary.manager.AlertDialogManager;
 import com.cesecsh.baseframelibrary.net.constant.CodeState;
-import com.cesecsh.baseframelibrary.net.json.SimpleJson;
+import com.cesecsh.baseframelibrary.net.json.ListJson;
 import com.cesecsh.baseframelibrary.ui.view.ToastView;
+
+import java.util.List;
 
 import rx.Subscriber;
 
@@ -14,14 +16,14 @@ import rx.Subscriber;
  * on 2017/1/3
  */
 
-public abstract class SimpleResponse<T> extends Subscriber<SimpleJson> {
+public abstract class ListResponse<T> extends Subscriber<ListJson> {
 
     @Override
-    public void onNext(SimpleJson simpleJson) {
-        if (simpleJson != null) {
-            switch (Integer.valueOf(simpleJson.getCode())) {
+    public void onNext(ListJson listJson) {
+        if (listJson != null) {
+            switch (Integer.valueOf(listJson.getCode())) {
                 case CodeState.SUCCESS:
-                    onSuccess(simpleJson);
+                    onSuccess((List<T>) listJson.getObjs());
                     break;
                 case CodeState.LOGIN_OVERDUE:
                     AlertDialogManager.showLoginOverdue(ActivityManager.getInstance().getTaskTop());
@@ -30,7 +32,7 @@ public abstract class SimpleResponse<T> extends Subscriber<SimpleJson> {
                     ToastView.getInstance().toast(ActivityManager.getInstance().getTaskTop(), CodeState.getMessage(CodeState.PERMISSION_DENY), ToastView.TYPE_WARNING);
                     break;
                 case CodeState.PARAM_ERROR:
-                    ToastView.getInstance().toast(ActivityManager.getInstance().getTaskTop(), simpleJson.getMessage(), ToastView.TYPE_WARNING);
+                    ToastView.getInstance().toast(ActivityManager.getInstance().getTaskTop(), listJson.getMessage(), ToastView.TYPE_WARNING);
                     break;
                 case CodeState.SERVER_ERROR:
                     ToastView.getInstance().toast(ActivityManager.getInstance().getTaskTop(), CodeState.getMessage(CodeState.SERVER_ERROR), ToastView.TYPE_WARNING);
@@ -41,5 +43,5 @@ public abstract class SimpleResponse<T> extends Subscriber<SimpleJson> {
     }
 
 
-    public abstract void onSuccess(SimpleJson simpleJson);
+    public abstract void onSuccess(List<T> objs);
 }

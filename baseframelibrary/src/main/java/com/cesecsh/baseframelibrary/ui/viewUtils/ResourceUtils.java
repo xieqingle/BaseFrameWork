@@ -8,7 +8,8 @@ import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.view.View;
 
-import com.cesecsh.ics.ui.ICSApplication;
+import com.cesecsh.baseframelibrary.FrameApplication;
+
 
 /**
  * 作者：谢青仂 on 2016/8/11
@@ -19,15 +20,15 @@ import com.cesecsh.ics.ui.ICSApplication;
  */
 public class ResourceUtils {
     public static Context getContext() {
-        return ICSApplication.getContext();
+        return FrameApplication.getContext();
     }
 
     public static Handler getHandler() {
-        return ICSApplication.getHandler();
+        return FrameApplication.getHandler();
     }
 
     public static int getMainThreadId() {
-        return ICSApplication.getMainThreadId();
+        return FrameApplication.getMainThreadId();
     }
 
     // /////////////////加载资源文件 ///////////////////////////

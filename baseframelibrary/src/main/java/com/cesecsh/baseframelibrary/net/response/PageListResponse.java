@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.net;
+package com.cesecsh.baseframelibrary.net.response;
 
 
 import com.cesecsh.baseframelibrary.manager.ActivityManager;
