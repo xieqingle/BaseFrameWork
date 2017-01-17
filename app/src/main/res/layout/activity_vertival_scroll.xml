@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vertival_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cesecsh.test.VerticalScrollActivity">
+    <!--android:autoStart：设置自动加载下一个View-->
+    <!--android:flipInterval：设置View之间切换的时间间隔-->
+    <!--android:inAnimation：设置切换View的进入动画-->
+    <!--android:outAnimation：设置切换View的退出动画-->
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoStart="true"
+        android:flipInterval="5000"
+        android:inAnimation="@anim/view_flipper_in_animator"
+        android:outAnimation="@anim/view_flipper_out_animator"/>
+
+</RelativeLayout>

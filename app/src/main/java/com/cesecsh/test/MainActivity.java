@@ -1,6 +1,7 @@
 package com.cesecsh.test;
 
 import android.Manifest;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -38,4 +39,9 @@ public class MainActivity extends PermissionActivity {
             }
         }, Manifest.permission.RECORD_AUDIO);
     }
+
+    public void onClick1(View view) {
+        startActivity(new Intent(this, VerticalScrollActivity.class));
+    }
 }
+

@@ -1,7 +1,6 @@
 package com.cesecsh.baseframelibrary.permission;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -83,19 +82,10 @@ public class PermissionActivity extends RxAppCompatActivity {
     private void showMissingPermissionDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(ActivityManager.getInstance().getTaskTop());
         builder.setTitle(R.string.help);
-        builder.setMessage(R.string.string_help_text);
+        builder.setMessage(R.string.string_permission_help_text);
         // 拒绝, 退出应用
-        builder.setNegativeButton(R.string.quit, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                ActivityManager.getInstance().closeAllActivity();
-            }
-        }).setPositiveButton(R.string.settings, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                startAppSettings();
-            }
-        });
+        builder.setNegativeButton(R.string.quit, (dialog, which) -> ActivityManager.getInstance().closeAllActivity())
+                .setPositiveButton(R.string.settings, (dialog, which) -> startAppSettings());
         builder.setCancelable(false);
         builder.show();
     }

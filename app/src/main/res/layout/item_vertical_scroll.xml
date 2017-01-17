@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_toast"
+        android:padding="5dp"
+        android:text="社区头条"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_title"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="5dp"
+        android:text="小米6回来了，你还在考虑其他手机吗？"/>
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:background="@color/colorPrimary"
+        android:padding="5dp"
+        android:text="新闻头条"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/tv_content1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_title2"
+        android:layout_toRightOf="@id/tv_title"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="5dp"
+        android:text="优越者（UNITEK）Y-3098DBK USB3.0高速扩展4口HUB集线器2米带电源 台式机笔记本电脑USB分线器 黑色"/>
+
+
+</RelativeLayout>
