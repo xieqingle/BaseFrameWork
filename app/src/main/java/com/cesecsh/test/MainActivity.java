@@ -43,5 +43,9 @@ public class MainActivity extends PermissionActivity {
     public void onClick1(View view) {
         startActivity(new Intent(this, VerticalScrollActivity.class));
     }
+
+    public void onClick2(View view) {
+        startActivity(new Intent(this, CarouseActivity.class));
+    }
 }
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CarouseView">
+        <attr name="carouseHintMode">
+            <enum name="point" value="0" />
+            <enum name="number" value="1" />
+        </attr>
+        <attr name="carouseGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+        <attr name="carouseHintPaddingRight" format="dimension" />
+        <attr name="carouseHintPaddingLeft" format="dimension" />
+        <attr name="carouseHintPaddingTop" format="dimension" />
+        <attr name="carouseHintPaddingBottom" format="dimension" />
+        <attr name="carousePadding" format="dimension" />
+
+        <attr name="carousePlayDelay" format="integer" />
+        <attr name="carousePlayColor" format="color|reference" />
+        <attr name="carouseHintAlpha" format="integer" />
+        <attr name="automatic" format="boolean" />
+    </declare-styleable>
+</resources>
