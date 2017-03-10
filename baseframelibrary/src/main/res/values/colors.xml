@@ -26,4 +26,9 @@
     <color name="toast_text_color">#ccffffff</color>
     <color name="bg_toast">#aa000000</color>
     <color name="white">#ffffff</color>
+
+    <!--tabLayout-->
+    <color name="default_select_color">#4B6A87</color>
+    <color name="default_divider_color">#8f8f8f</color>
+    <color name="default_normal_color">#11000000</color>
 </resources>

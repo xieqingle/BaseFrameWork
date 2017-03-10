@@ -32,4 +32,80 @@
         <attr name="carouseHintAlpha" format="integer" />
         <attr name="automatic" format="boolean" />
     </declare-styleable>
+    <declare-styleable name="STabLayout">
+        <!-- indicator -->
+        <!-- 设置显示器颜色 -->
+        <attr name="stlIndicatorColor" format="color" />
+        <!-- 设置显示器高度 -->
+        <attr name="stlIndicatorHeight" format="dimension" />
+        <!-- 设置显示器固定宽度 -->
+        <attr name="stlIndicatorWidth" format="dimension" />
+        <!-- 设置显示器margin,当indicator_width大于0,无效 -->
+        <attr name="stlIndicatorMarginLeft" format="dimension" />
+        <attr name="stlIndicatorMarginTop" format="dimension" />
+        <attr name="stlIndicatorMarginRight" format="dimension" />
+        <attr name="stlIndicatorMarginBottom" format="dimension" />
+        <!-- 设置显示器圆角弧度-->
+        <attr name="stlIndicatorCornerRadius" format="dimension" />
+        <!--&lt;!&ndash; 设置显示器长度与title一样长,只有在STYLE_NORMAL并且indicatorWidth小于零有效&ndash;&gt;-->
+        <!--<attr name="stlIndicatorWidthEqualText" format="boolean" />-->
+        <!--设置显示器的样式，时候是与title一样长，还是和字体一样-->
+        <attr name="stlIndicatorStyle">
+            <enum name="normal" value="0" />
+            <enum name="equalText" value="1" />
+        </attr>
+
+        <!-- underline -->
+        <!-- 设置下划线颜色 -->
+        <attr name="stlUnderlineColor" format="color" />
+        <!-- 设置下划线高度 -->
+        <attr name="stlUnderlineHeight" format="dimension" />
+
+        <!-- divider -->
+        <!-- 设置分割线颜色 -->
+        <attr name="selDividerColor" format="color" />
+        <!-- 设置分割线宽度 -->
+        <attr name="stlDividerWidth" format="dimension" />
+        <!-- 设置分割线的paddingTop和paddingBottom -->
+        <attr name="selDividerPadding" format="dimension" />
+
+        <!-- tab -->
+        <!-- 设置tab的paddingLeft和paddingRight -->
+        <attr name="stlTabPadding" format="dimension" />
+        <!-- 设置tab大小等分 -->
+        <attr name="stlTabSpaceEqual" format="boolean" />
+        <!-- 设置tab固定大小 -->
+        <attr name="stlTabWidth" format="dimension" />
+
+        <!-- title -->
+        <!-- 设置字体大小 -->
+        <attr name="stlTextSize" format="dimension" />
+        <!-- 设置字体选中颜色 -->
+        <attr name="stlTextFocusColor" format="color" />
+        <!-- 设置字体未选中颜色 -->
+        <attr name="stlTextNormalColor" format="color" />
+        <!-- 设置字体全大写 -->
+        <attr name="stlTextAllCaps" format="boolean" />
+        <!-- 设置字体加粗 -->
+        <attr name="stlTextStyle" format="enum">
+            <enum name="NONE" value="0" />
+            <enum name="SELECT" value="1" />
+            <enum name="BOTH" value="2" />
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="MsgView">
+        <!-- 圆角矩形背景色 -->
+        <attr name="mv_backgroundColor" format="color" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_cornerRadius" format="dimension" />
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_strokeWidth" format="dimension" />
+        <!-- 圆角边框颜色-->
+        <attr name="mv_strokeColor" format="color" />
+        <!-- 圆角弧度是高度一半-->
+        <attr name="mv_isRadiusHalfHeight" format="boolean" />
+        <!-- 圆角矩形宽高相等,取较宽高中大值-->
+        <attr name="mv_isWidthHeightEqual" format="boolean" />
+    </declare-styleable>
 </resources>
