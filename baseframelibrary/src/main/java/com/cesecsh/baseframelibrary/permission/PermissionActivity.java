@@ -15,6 +15,7 @@ import android.support.v7.app.AlertDialog;
 
 import com.cesecsh.baseframelibrary.R;
 import com.cesecsh.baseframelibrary.manager.ActivityManager;
+import com.cesecsh.baseframelibrary.ui.view.ToastView;
 import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
 import java.util.ArrayList;
@@ -51,6 +52,9 @@ public class PermissionActivity extends RxAppCompatActivity {
             } else {
                 listener.onGranted();
             }
+        } else {
+//            ToastView.getInstance().toast(this, "权限已开通");
+            listener.onGranted();
         }
     }
 

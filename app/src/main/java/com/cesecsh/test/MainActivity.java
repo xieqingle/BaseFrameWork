@@ -34,7 +34,6 @@ public class MainActivity extends PermissionActivity {
 
             @Override
             public void onDenied(List<String> deniedPermissions) {
-//                System.out.println(deniedPermissions.toArray());
                 Toast.makeText(MainActivity.this, deniedPermissions.toString(), Toast.LENGTH_SHORT).show();
             }
         }, Manifest.permission.RECORD_AUDIO);
@@ -46,6 +45,22 @@ public class MainActivity extends PermissionActivity {
 
     public void onClick2(View view) {
         startActivity(new Intent(this, CarouseActivity.class));
+    }
+
+    public void onClick3(View view) {
+        startActivity(new Intent(this, DialogView.class));
+    }
+
+    public void onClick4(View view) {
+        startActivity(new Intent(this, UploadFilesActivity.class));
+    }
+
+    public void onClick5(View view) {
+        startActivity(new Intent(this, TabActivity.class));
+    }
+
+    public void onClick6(View view) {
+        startActivity(new Intent(this, ProgressImageActivity.class));
     }
 }
 

@@ -11,13 +11,11 @@ public class CommonSubscriber extends BaseSubscriber<ResponseBody> {
     @Override
     public void onCompleted() {
         super.onCompleted();
-
     }
 
     @Override
     public void onError(Throwable e) {
         super.onError(e);
-
     }
 
     @Override

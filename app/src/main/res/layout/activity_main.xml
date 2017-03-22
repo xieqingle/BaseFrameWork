@@ -29,4 +29,28 @@
         android:layout_height="wrap_content"
         android:onClick="onClick2"
         android:text="click me to carouse view" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick3"
+        android:text="click me to dialog view" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick4"
+        android:text="click me to upload files" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick5"
+        android:text="click me to upload files" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick6"
+        android:text="click me to progress imageview" />
 </LinearLayout>
