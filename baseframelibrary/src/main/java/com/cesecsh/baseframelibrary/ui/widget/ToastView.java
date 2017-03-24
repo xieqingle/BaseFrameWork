@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.ui.view;
+package com.cesecsh.baseframelibrary.ui.widget;
 
 import android.content.Context;
 import android.text.TextUtils;

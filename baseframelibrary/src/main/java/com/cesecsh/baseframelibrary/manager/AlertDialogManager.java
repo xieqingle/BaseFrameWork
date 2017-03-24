@@ -3,8 +3,8 @@ package com.cesecsh.baseframelibrary.manager;
 import android.app.Activity;
 import android.content.Context;
 
-import com.cesecsh.baseframelibrary.ui.alertView.AlertView;
-import com.cesecsh.baseframelibrary.ui.alertView.OnItemClickListener;
+import com.cesecsh.baseframelibrary.ui.widget.alertView.AlertView;
+import com.cesecsh.baseframelibrary.ui.widget.alertView.OnItemClickListener;
 
 /**
  * Created by 上海中电

@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.net.upload;
+package com.cesecsh.baseframelibrary.net.response;
 
 import java.io.IOException;
 

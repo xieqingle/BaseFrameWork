@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.ui.carouse.hintView;
+package com.cesecsh.baseframelibrary.ui.widget.carouse.hintView;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.cesecsh.baseframelibrary.ui.carouse.HintView;
+import com.cesecsh.baseframelibrary.ui.widget.carouse.HintView;
 import com.cesecsh.baseframelibrary.ui.viewUtils.DensityUtils;
 
 /**

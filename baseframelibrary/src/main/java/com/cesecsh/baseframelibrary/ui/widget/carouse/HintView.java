@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.ui.carouse;
+package com.cesecsh.baseframelibrary.ui.widget.carouse;
 
 /**
  * BaseFramework

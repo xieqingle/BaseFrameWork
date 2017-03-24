@@ -3,7 +3,7 @@ package com.cesecsh.test;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.cesecsh.baseframelibrary.ui.view.IVProgress;
+import com.cesecsh.baseframelibrary.ui.widget.IVProgress;
 import com.cesecsh.baseframework.R;
 
 public class ProgressImageActivity extends AppCompatActivity {

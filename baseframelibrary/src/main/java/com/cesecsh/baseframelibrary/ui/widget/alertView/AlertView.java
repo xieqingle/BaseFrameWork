@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.ui.alertView;
+package com.cesecsh.baseframelibrary.ui.widget.alertView;
 
 import android.app.Activity;
 import android.content.Context;

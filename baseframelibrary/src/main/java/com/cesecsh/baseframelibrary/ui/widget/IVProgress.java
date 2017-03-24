@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.ui.view;
+package com.cesecsh.baseframelibrary.ui.widget;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

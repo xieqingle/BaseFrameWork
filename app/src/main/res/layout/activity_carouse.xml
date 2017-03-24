@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.cesecsh.test.CarouseActivity">
 
-    <com.cesecsh.baseframelibrary.ui.carouse.CarouseView
+    <com.cesecsh.baseframelibrary.ui.widget.carouse.CarouseView
         android:id="@+id/carouse_view"
         android:layout_width="match_parent"
         android:layout_height="200dp"

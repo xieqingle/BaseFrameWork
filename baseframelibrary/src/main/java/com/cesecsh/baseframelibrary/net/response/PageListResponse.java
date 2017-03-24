@@ -6,7 +6,7 @@ import com.cesecsh.baseframelibrary.manager.AlertDialogManager;
 import com.cesecsh.baseframelibrary.net.constant.CodeState;
 import com.cesecsh.baseframelibrary.net.json.PageListInfo;
 import com.cesecsh.baseframelibrary.net.json.PageListJson;
-import com.cesecsh.baseframelibrary.ui.view.ToastView;
+import com.cesecsh.baseframelibrary.ui.widget.ToastView;
 
 import rx.Subscriber;
 

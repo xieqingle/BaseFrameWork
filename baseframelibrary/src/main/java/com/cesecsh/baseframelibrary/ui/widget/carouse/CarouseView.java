@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.ui.carouse;
+package com.cesecsh.baseframelibrary.ui.widget.carouse;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,8 +16,8 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.cesecsh.baseframelibrary.R;
-import com.cesecsh.baseframelibrary.ui.carouse.adapter.LoopPageAdapter;
-import com.cesecsh.baseframelibrary.ui.carouse.hintView.ColorPointHintView;
+import com.cesecsh.baseframelibrary.ui.widget.carouse.adapter.LoopPageAdapter;
+import com.cesecsh.baseframelibrary.ui.widget.carouse.hintView.ColorPointHintView;
 import com.cesecsh.baseframelibrary.ui.viewUtils.DensityUtils;
 
 import java.lang.ref.WeakReference;

@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.ui.carouse.adapter;
+package com.cesecsh.baseframelibrary.ui.widget.carouse.adapter;
 
 import android.database.DataSetObserver;
 import android.support.v4.view.PagerAdapter;
@@ -7,8 +7,8 @@ import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.cesecsh.baseframelibrary.ui.carouse.CarouseView;
-import com.cesecsh.baseframelibrary.ui.carouse.HintView;
+import com.cesecsh.baseframelibrary.ui.widget.carouse.CarouseView;
+import com.cesecsh.baseframelibrary.ui.widget.carouse.HintView;
 
 import java.lang.reflect.Field;
 

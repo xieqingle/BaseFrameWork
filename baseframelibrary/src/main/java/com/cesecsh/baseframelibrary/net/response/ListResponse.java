@@ -5,7 +5,7 @@ import com.cesecsh.baseframelibrary.manager.ActivityManager;
 import com.cesecsh.baseframelibrary.manager.AlertDialogManager;
 import com.cesecsh.baseframelibrary.net.constant.CodeState;
 import com.cesecsh.baseframelibrary.net.json.ListJson;
-import com.cesecsh.baseframelibrary.ui.view.ToastView;
+import com.cesecsh.baseframelibrary.ui.widget.ToastView;
 
 import java.util.List;
 

@@ -8,11 +8,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.cesecsh.baseframelibrary.ui.carouse.CarouseView;
-import com.cesecsh.baseframelibrary.ui.carouse.HintView;
-import com.cesecsh.baseframelibrary.ui.carouse.OnItemClickListener;
-import com.cesecsh.baseframelibrary.ui.carouse.adapter.LoopPageAdapter;
-import com.cesecsh.baseframelibrary.ui.carouse.hintView.IconHintView;
+import com.cesecsh.baseframelibrary.ui.widget.carouse.CarouseView;
+import com.cesecsh.baseframelibrary.ui.widget.carouse.HintView;
+import com.cesecsh.baseframelibrary.ui.widget.carouse.OnItemClickListener;
+import com.cesecsh.baseframelibrary.ui.widget.carouse.adapter.LoopPageAdapter;
 import com.cesecsh.baseframework.R;
 
 import java.util.ArrayList;

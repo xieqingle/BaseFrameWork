@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.cesecsh.test.ProgressImageActivity">
 
-    <com.cesecsh.baseframelibrary.ui.view.IVProgress
+    <com.cesecsh.baseframelibrary.ui.widget.IVProgress
         android:id="@+id/image"
         android:layout_width="124dp"
         android:layout_height="137dp"

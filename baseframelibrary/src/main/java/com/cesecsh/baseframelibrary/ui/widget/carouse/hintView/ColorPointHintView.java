@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.ui.carouse.hintView;
+package com.cesecsh.baseframelibrary.ui.widget.carouse.hintView;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

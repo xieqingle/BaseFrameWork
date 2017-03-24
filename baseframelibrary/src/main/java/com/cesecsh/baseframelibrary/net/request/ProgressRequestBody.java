@@ -1,4 +1,4 @@
-package com.cesecsh.baseframelibrary.net.upload;
+package com.cesecsh.baseframelibrary.net.request;
 
 import java.io.IOException;
 
@@ -21,12 +21,21 @@ public class ProgressRequestBody extends RequestBody {
 
     protected RequestBody delegate;
     protected Listener listener;
+    protected String name;
+    private static final String TAG = "ProgressRequestBody";
 
     protected CountingSink countingSink;
+
+    public ProgressRequestBody(RequestBody delegate, Listener listener, String name) {
+        this.delegate = delegate;
+        this.listener = listener;
+        this.name = name;
+    }
 
     public ProgressRequestBody(RequestBody delegate, Listener listener) {
         this.delegate = delegate;
         this.listener = listener;
+        this.name = TAG;
     }
 
     @Override
@@ -68,13 +77,13 @@ public class ProgressRequestBody extends RequestBody {
             super.write(source, byteCount);
 
             bytesWritten += byteCount;
-            listener.onRequestProgress(bytesWritten, contentLength());
+            listener.onRequestProgress(bytesWritten, contentLength(), name);
         }
 
     }
 
     public interface Listener {
-        void onRequestProgress(long bytesWritten, long contentLength);
+        void onRequestProgress(long bytesWritten, long contentLength, String name);
     }
 
 }
