@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda' //加上这句加,入plugin声明
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
@@ -41,4 +42,8 @@ dependencies {
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.android.support:design:25.2.0'
     testCompile 'junit:junit:4.12'
+    // ButterKnife
+    // https://github.com/JakeWharton/butterknife
+    compile 'com.jakewharton:butterknife:8.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.2.1'
 }

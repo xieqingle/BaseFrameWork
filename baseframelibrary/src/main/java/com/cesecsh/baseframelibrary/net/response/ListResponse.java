@@ -14,6 +14,9 @@ import rx.Subscriber;
 /**
  * Created by 上海中电
  * on 2017/1/3
+ * 继承 Subscriber 并且对ListJson处理，
+ * 成功：返回list对象，
+ * 失败：给出相应的提示
  */
 
 public abstract class ListResponse<T> extends Subscriber<ListJson> {

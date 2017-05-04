@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 
 import com.cesecsh.baseframelibrary.ui.widget.alertView.AlertView;
-import com.cesecsh.baseframelibrary.ui.widget.alertView.OnItemClickListener;
 
 /**
  * Created by 上海中电
@@ -28,18 +27,16 @@ public class AlertDialogManager {
                     null,
                     context,
                     AlertView.Style.Alert,
-                    new OnItemClickListener() {
-                        @Override
-                        public void onItemClick(Object o, int position) {
-                            switch (position) {
-                                case 0:// 点击重新登录
-                                    Activity taskTop = ActivityManager.getInstance().getTaskTop();
-                                    ActivityManager.getInstance().closeAllActivity();
-                                    break;
-                                case -1:// 点击退出
-                                    ActivityManager.getInstance().closeAllActivity();
-                                    break;
-                            }
+                    (o, position) -> {
+                        switch (position) {
+                            case 0:// 点击重新登录
+                                Activity taskTop = ActivityManager.getInstance().getTaskTop();
+//                                taskTop.startActivity(new Intent(taskTop, LoginActivity.class));
+                                ActivityManager.getInstance().closeAllActivity();
+                                break;
+                            case -1:// 点击退出
+                                ActivityManager.getInstance().closeAllActivity();
+                                break;
                         }
                     })
                     .setCancelable(false)

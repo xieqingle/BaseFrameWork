@@ -54,11 +54,12 @@ public class ActivityManager {
 
     public void closeAllActivity() {
         if (mActivities != null && mActivities.size() > 0) {
-            for (Activity mActivity : mActivities) {
-                if (!mActivity.isFinishing()) {
-                    mActivity.finish();
-                }
-            }
+            mActivities.stream().filter(mActivity -> !mActivity.isFinishing()).forEach(Activity::finish);
+//            for (Activity mActivity : mActivities) {
+//                if (!mActivity.isFinishing()) {
+//                    mActivity.finish();
+//                }
+//            }
         }
     }
 }

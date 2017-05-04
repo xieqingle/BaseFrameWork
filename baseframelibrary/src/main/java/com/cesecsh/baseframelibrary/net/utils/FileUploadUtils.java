@@ -19,7 +19,7 @@ import okhttp3.RequestBody;
 
 public class FileUploadUtils {
     /**
-     * 不然使用者初始化
+     * 不让使用者初始化
      */
     public FileUploadUtils() {
         throw new IllegalStateException("You can not fuck me");
@@ -66,7 +66,7 @@ public class FileUploadUtils {
         }
         return builder.build();
     }
-sda
+
     /**
      * 根据文件转化成上传文件的multiPartBody格式
      *

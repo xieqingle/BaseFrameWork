@@ -12,6 +12,7 @@ import okio.Source;
 
 /**
  * Created by RockQ on 2017/3/17
+ * 自定义 ResponseBody 拦截进度，添加监听接口，返回进度
  */
 
 public class ProgressResponseBody extends ResponseBody {

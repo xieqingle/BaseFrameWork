@@ -11,6 +11,7 @@ import com.cesecsh.baseframelibrary.LogHelper.AppLog;
 import com.cesecsh.baseframelibrary.permission.PermissionActivity;
 import com.cesecsh.baseframelibrary.permission.PermissionListener;
 import com.cesecsh.baseframework.R;
+import com.cesecsh.test.toolBar.ToolBarDemoActivity;
 
 import java.util.List;
 
@@ -61,6 +62,10 @@ public class MainActivity extends PermissionActivity {
 
     public void onClick6(View view) {
         startActivity(new Intent(this, ProgressImageActivity.class));
+    }
+
+    public void onClick7(View view) {
+        startActivity(new Intent(this, ToolBarDemoActivity.class));
     }
 }
 

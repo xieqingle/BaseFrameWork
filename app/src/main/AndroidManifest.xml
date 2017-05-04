@@ -1,42 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cesecsh.baseframework">
+          package="com.cesecsh.baseframework">
 
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon_926"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.cesecsh.test.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.cesecsh.test.VerticalScrollActivity" />
-        <activity android:name="com.cesecsh.test.CarouseActivity" />
-        <activity android:name="com.cesecsh.test.DialogView" />
-        <activity android:name="com.cesecsh.test.UploadFilesActivity" />
+        <activity android:name="com.cesecsh.test.VerticalScrollActivity"/>
+        <activity android:name="com.cesecsh.test.CarouseActivity"/>
+        <activity android:name="com.cesecsh.test.DialogView"/>
+        <activity android:name="com.cesecsh.test.UploadFilesActivity"/>
         <!-- 选择图片 -->
         <activity
             android:name="me.iwf.photopicker.PhotoPickerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name="me.iwf.photopicker.PhotoPagerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name="com.cesecsh.test.TabActivity" />
-        <activity android:name="com.cesecsh.test.ProgressImageActivity"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.cesecsh.test.TabActivity"/>
+        <activity android:name="com.cesecsh.test.ProgressImageActivity"/>
+        <activity android:name="com.cesecsh.test.toolBar.ToolBarDemoActivity">
+        </activity>
     </application>
 
 </manifest>
