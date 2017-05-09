@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/BaseFramework.iml" filepath="$PROJECT_DIR$/BaseFramework.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/baseframelibrary/baseframelibrary.iml" filepath="$PROJECT_DIR$/baseframelibrary/baseframelibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zhyautolayout/zhyautolayout.iml" filepath="$PROJECT_DIR$/zhyautolayout/zhyautolayout.iml" />
     </modules>
   </component>
 </project>

@@ -1,1 +1,1 @@
-include ':app', ':baseframelibrary', ':zhyautolayout'
+include ':app', ':baseframelibrary'
