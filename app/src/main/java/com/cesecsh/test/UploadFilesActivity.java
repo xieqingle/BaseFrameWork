@@ -3,22 +3,15 @@ package com.cesecsh.test;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.cesecsh.baseframelibrary.net.base.BaseApiService;
-import com.cesecsh.baseframelibrary.net.base.BaseRetrofit;
-import com.cesecsh.baseframelibrary.net.base.BaseSubscriber;
-import com.cesecsh.baseframelibrary.net.base.CommonSubscriber;
-import com.cesecsh.baseframelibrary.net.json.NormalJson;
-import com.cesecsh.baseframelibrary.net.response.NormalResponse;
 import com.cesecsh.baseframelibrary.permission.PermissionActivity;
 import com.cesecsh.baseframelibrary.permission.PermissionListener;
 import com.cesecsh.baseframework.R;
-import com.tamic.novate.Novate;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -28,7 +21,6 @@ import java.util.Map;
 
 import me.iwf.photopicker.PhotoPicker;
 import okhttp3.MediaType;
-import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 import rx.Subscriber;
@@ -155,5 +147,44 @@ public class UploadFilesActivity extends PermissionActivity {
 //
 //                    }
 //                });
+    }
+
+    public void submit(View view) {
+//        userName=谢青仂&userId=402882ce55d765760155d8b161bd0020&latitude=30.3214&longitude=120.124168&time=2017-05-04 14:48:43
+        Map<String, Object> map = new HashMap<>();
+        String name = map.getClass().getName();
+        map.put("userName", "xjxjxjxjxjxjxjxjxjxjxj");
+        map.put("userId", "9898989898989898989898");
+        map.put("latitude", "30.3214");
+        map.put("longitude", "120.124168");
+        map.put("time", "2017-05-04 14:48:43");
+        new UploadRetrofit()
+                .getICSAPiService("http://192.168.1.146:3000/")
+                .create(BaseApiService.class)
+                .executePostBody("map/api/upload_position", map)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .unsubscribeOn(Schedulers.io())
+                .subscribe(new Subscriber<ResponseBody>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        Log.d("xql", e.getMessage());
+                    }
+
+                    @Override
+                    public void onNext(ResponseBody responseBody) {
+                        try {
+                            Log.d("xql", responseBody.string());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                });
     }
 }

@@ -1,4 +1,4 @@
-package com.cesecsh.test.toolBar;
+package com.cesecsh.baseframelibrary.ui.widget.toolBar;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -21,9 +21,9 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.cesecsh.baseframelibrary.R;
 import com.cesecsh.baseframelibrary.ui.viewUtils.DensityUtils;
 import com.cesecsh.baseframelibrary.ui.viewUtils.ViewUtils;
-import com.cesecsh.baseframework.R;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -418,7 +418,28 @@ public class XToolBar extends RelativeLayout {
 
         mLeftViewPadding = new int[]{leftViewPaddingLeft, leftViewPaddingTop, leftViewPaddingRight, leftViewPaddingBottom};
         mLeftViewMargin = new int[]{leftViewMarginLeft, leftViewMarginTop, leftViewMarginRight, leftViewMarginBottom};
+        if (mLeftImageView != null) {
+            ViewUtils.setWidth(mLeftImageView, mLeftImageWidth);
+            ViewUtils.setHeight(mLeftImageView, mLeftImageHeight);
+            if (mLeftViewPadding != null) {
+                mLeftImageView.setPadding(mLeftViewPadding[0], mLeftViewPadding[1], mLeftViewPadding[2], mLeftViewPadding[3]);
+            }
+            if (mLeftViewMargin != null) {
+                ViewUtils.setMargins(mLeftImageView, mLeftViewMargin[0], mLeftViewMargin[1], mLeftViewMargin[2], mLeftViewMargin[3]);
+            }
+        }
+        if (mLeftTextView != null) {
+            ViewUtils.setWidth(mLeftTextView, mLeftTextWidth);
+            ViewUtils.setHeight(mLeftTextView, mLeftTextHeight);
+            mLeftTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mLeftTextSize);
+            if (mLeftViewPadding != null) {
+                mLeftTextView.setPadding(mLeftViewPadding[0], mLeftViewPadding[1], mLeftViewPadding[2], mLeftViewPadding[3]);
+            }
+            if (mLeftViewMargin != null) {
+                ViewUtils.setMargins(mLeftTextView, mLeftViewMargin[0], mLeftViewMargin[1], mLeftViewMargin[2], mLeftViewMargin[3]);
+            }
 
+        }
         if (!TextUtils.isEmpty(middleText)) {
             this.setMiddleText(middleText);
         }
@@ -427,7 +448,18 @@ public class XToolBar extends RelativeLayout {
         mMiddleTextPadding = new int[]{middleTextPaddingLeft, middleTextPaddingTop, middleTextPaddingRight, middleTextPaddingBottom};
         mMiddleTextMargin = new int[]{middleTextMarginLeft, middleTextMarginTop, middleTextMarginRight, middleTextMarginBottom};
 
+        if (mMiddleTextView != null) {
+            ViewUtils.setWidth(mMiddleTextView, mMiddleTextWidth);
+            ViewUtils.setHeight(mMiddleTextView, mMiddleTextHeight);
+            mMiddleTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mMiddleTextSize);
+            if (mMiddleTextPadding != null) {
+                mMiddleTextView.setPadding(mMiddleTextPadding[0], mMiddleTextPadding[1], mMiddleTextPadding[2], mMiddleTextPadding[3]);
+            }
+            if (mMiddleTextMargin != null) {
+                ViewUtils.setMargins(mMiddleTextView, mMiddleTextMargin[0], mMiddleTextMargin[1], mMiddleTextMargin[2], mMiddleTextMargin[3]);
+            }
 
+        }
         if (rightImageId != -1) {
             this.setRightImageResource(rightImageId);
         }
@@ -449,7 +481,39 @@ public class XToolBar extends RelativeLayout {
 
         rightViewPadding = new int[]{rightViewPaddingLeft, rightViewPaddingTop, rightViewPaddingRight, rightViewPaddingBottom};
         mRightViewMargin = new int[]{rightViewMarginLeft, rightViewMarginTop, rightViewMarginRight, rightViewMarginBottom};
+        if (mRightImageView != null) {
+            ViewUtils.setWidth(mRightImageView, mRightImageWidth);
+            ViewUtils.setHeight(mRightImageView, mRightImageHeight);
+            if (rightViewPadding != null) {
+                ViewUtils.setPadding(mRightImageView, rightViewPadding[0], rightViewPadding[1], rightViewPadding[2], rightViewPadding[3]);
+            }
+            if (mRightViewMargin != null) {
+                ViewUtils.setMargins(mRightImageView, mRightViewMargin[0], mRightViewMargin[1], mRightViewMargin[2], mRightViewMargin[3]);
+            }
+        }
+        if (mRightTextView != null) {
+            ViewUtils.setWidth(mRightTextView, mRightTextWidth);
+            ViewUtils.setHeight(mRightTextView, mRightTextHeight);
+            mRightTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mRightTextSize);
+            if (rightViewPadding != null) {
+                mRightTextView.setPadding(rightViewPadding[0], rightViewPadding[1], rightViewPadding[2], rightViewPadding[3]);
+            }
+            if (mRightViewMargin != null) {
+                ViewUtils.setMargins(mRightTextView, mRightViewMargin[0], mRightViewMargin[1], mRightViewMargin[2], mRightViewMargin[3]);
+            }
 
+        }
+        if (mRightCheckBox != null) {
+            ViewUtils.setWidth(mRightCheckBox, mRightCheckBoxWidth);
+            ViewUtils.setHeight(mRightCheckBox, mRightImageHeight);
+            if (mRightCheckBoxMargin != null) {
+                ViewUtils.setMargins(mRightCheckBox, mRightCheckBoxMargin[0], mRightCheckBoxMargin[1], mRightCheckBoxMargin[2], mRightCheckBoxMargin[3]);
+            }
+            if (mRightCheckBoxPadding != null) {
+                mRightCheckBox.setPadding(mRightCheckBoxPadding[0], mRightCheckBoxPadding[1], mRightCheckBoxPadding[2], mRightCheckBoxPadding[3]);
+            }
+
+        }
         if (!TextUtils.isEmpty(onLeftViewClick)) {
 
             OnClickListener onLeftViewClickListener = new OnClickListener() {
@@ -523,6 +587,18 @@ public class XToolBar extends RelativeLayout {
             this.setMiddleText(mMiddleEditTextText);
         }
         setMiddleEditImage(middleEditLeftImage, middleEditTopImage, middleEditRightImage, middleEditBottomImage);
+        if (mMiddleEditText != null) {
+            ViewUtils.setWidth(mMiddleEditText, mMiddleEditWidth);
+            ViewUtils.setHeight(mMiddleEditText, mMiddleEditHeight);
+            mMiddleEditText.setTextSize(TypedValue.COMPLEX_UNIT_PX, mMiddleEditTextSize);
+            if (mMiddleEditPadding != null) {
+                mMiddleEditText.setPadding(mMiddleEditPadding[0], mMiddleEditPadding[1], mMiddleEditPadding[2], mMiddleEditPadding[3]);
+            }
+            if (mMiddleEditMargin != null) {
+                ViewUtils.setMargins(mMiddleEditText, mMiddleEditMargin[0], mMiddleEditMargin[1], mMiddleEditMargin[2], mMiddleEditMargin[3]);
+            }
+
+        }
     }
 
 
@@ -1754,15 +1830,6 @@ public class XToolBar extends RelativeLayout {
      */
     private void measureLeftImage() {
         if (mLeftImageView != null) {
-            ViewUtils.setWidth(mLeftImageView, mLeftImageWidth);
-            ViewUtils.setHeight(mLeftImageView, mLeftImageHeight);
-            if (mLeftViewPadding != null) {
-                mLeftImageView.setPadding(mLeftViewPadding[0], mLeftViewPadding[1], mLeftViewPadding[2], mLeftViewPadding[3]);
-            }
-            if (mLeftViewMargin != null) {
-                ViewUtils.setMargins(mLeftImageView, mLeftViewMargin[0], mLeftViewMargin[1], mLeftViewMargin[2], mLeftViewMargin[3]);
-            }
-
             int measureSize = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED);
             mLeftImageView.measure(measureSize, measureSize);
         }
@@ -1773,16 +1840,6 @@ public class XToolBar extends RelativeLayout {
      */
     private void measureLeftText() {
         if (mLeftTextView != null) {
-            ViewUtils.setWidth(mLeftTextView, mLeftTextWidth);
-            ViewUtils.setHeight(mLeftTextView, mLeftTextHeight);
-            mLeftTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mLeftTextSize);
-            if (mLeftViewPadding != null) {
-                mLeftTextView.setPadding(mLeftViewPadding[0], mLeftViewPadding[1], mLeftViewPadding[2], mLeftViewPadding[3]);
-            }
-            if (mLeftViewMargin != null) {
-                ViewUtils.setMargins(mLeftTextView, mLeftViewMargin[0], mLeftViewMargin[1], mLeftViewMargin[2], mLeftViewMargin[3]);
-            }
-
             int measureSize = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED);
             mLeftTextView.measure(measureSize, measureSize);
         }
@@ -1800,15 +1857,6 @@ public class XToolBar extends RelativeLayout {
 
     private void measureMiddleEdit() {
         if (mMiddleEditText != null) {
-            ViewUtils.setWidth(mMiddleEditText, mMiddleEditWidth);
-            ViewUtils.setHeight(mMiddleEditText, mMiddleEditHeight);
-            mMiddleEditText.setTextSize(TypedValue.COMPLEX_UNIT_PX, mMiddleEditTextSize);
-            if (mMiddleEditPadding != null) {
-                mMiddleEditText.setPadding(mMiddleEditPadding[0], mMiddleEditPadding[1], mMiddleEditPadding[2], mMiddleEditPadding[3]);
-            }
-            if (mMiddleEditMargin != null) {
-                ViewUtils.setMargins(mMiddleEditText, mMiddleEditMargin[0], mMiddleEditMargin[1], mMiddleEditMargin[2], mMiddleEditMargin[3]);
-            }
 
             int measureSize = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED);
             mMiddleEditText.measure(measureSize, measureSize);
@@ -1820,15 +1868,6 @@ public class XToolBar extends RelativeLayout {
      */
     private void measureMiddleText() {
         if (mMiddleTextView != null) {
-            ViewUtils.setWidth(mMiddleTextView, mMiddleTextWidth);
-            ViewUtils.setHeight(mMiddleTextView, mMiddleTextHeight);
-            mMiddleTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mMiddleTextSize);
-            if (mMiddleTextPadding != null) {
-                mMiddleTextView.setPadding(mMiddleTextPadding[0], mMiddleTextPadding[1], mMiddleTextPadding[2], mMiddleTextPadding[3]);
-            }
-            if (mMiddleTextMargin != null) {
-                ViewUtils.setMargins(mMiddleTextView, mMiddleTextMargin[0], mMiddleTextMargin[1], mMiddleTextMargin[2], mMiddleTextMargin[3]);
-            }
 
             int measureSize = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED);
             mMiddleTextView.measure(measureSize, measureSize);
@@ -1850,14 +1889,7 @@ public class XToolBar extends RelativeLayout {
      */
     private void measureRightImage() {
         if (mRightImageView != null) {
-            ViewUtils.setWidth(mRightImageView, mRightImageWidth);
-            ViewUtils.setHeight(mRightImageView, mRightImageHeight);
-            if (rightViewPadding != null) {
-                ViewUtils.setPadding(mRightImageView, rightViewPadding[0], rightViewPadding[1], rightViewPadding[2], rightViewPadding[3]);
-            }
-            if (mRightViewMargin != null) {
-                ViewUtils.setMargins(mRightImageView, mRightViewMargin[0], mRightViewMargin[1], mRightViewMargin[2], mRightViewMargin[3]);
-            }
+
 
             int measureSize = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED);
             mRightImageView.measure(measureSize, measureSize);
@@ -1869,14 +1901,6 @@ public class XToolBar extends RelativeLayout {
      */
     private void measureRightCheckBox() {
         if (mRightCheckBox != null) {
-            ViewUtils.setWidth(mRightCheckBox, mRightCheckBoxWidth);
-            ViewUtils.setHeight(mRightCheckBox, mRightImageHeight);
-            if (mRightCheckBoxMargin != null) {
-                ViewUtils.setMargins(mRightCheckBox, mRightCheckBoxMargin[0], mRightCheckBoxMargin[1], mRightCheckBoxMargin[2], mRightCheckBoxMargin[3]);
-            }
-            if (mRightCheckBoxPadding != null) {
-                mRightCheckBox.setPadding(mRightCheckBoxPadding[0], mRightCheckBoxPadding[1], mRightCheckBoxPadding[2], mRightCheckBoxPadding[3]);
-            }
 
             int measureSize = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED);
             mRightCheckBox.measure(measureSize, measureSize);
@@ -1888,15 +1912,6 @@ public class XToolBar extends RelativeLayout {
      */
     private void measureRightText() {
         if (mRightTextView != null) {
-            ViewUtils.setWidth(mRightTextView, mRightTextWidth);
-            ViewUtils.setHeight(mRightTextView, mRightTextHeight);
-            mRightTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mRightTextSize);
-            if (rightViewPadding != null) {
-                mRightTextView.setPadding(rightViewPadding[0], rightViewPadding[1], rightViewPadding[2], rightViewPadding[3]);
-            }
-            if (mRightViewMargin != null) {
-                ViewUtils.setMargins(mRightTextView, mRightViewMargin[0], mRightViewMargin[1], mRightViewMargin[2], mRightViewMargin[3]);
-            }
 
             int measureSize = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED);
             mRightTextView.measure(measureSize, measureSize);

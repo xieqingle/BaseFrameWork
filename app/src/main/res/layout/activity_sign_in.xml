@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:this="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.cesecsh.baseframelibrary.ui.widget.toolBar.XToolBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="88px"
+        android:background="@color/main_color"
+        this:leftImageSrc="@mipmap/icon_back"
+        this:leftViewMarginTop="20px"
+        this:leftViewPaddingLeft="20px"
+        this:middleText="@string/tb_sing_In_activity"
+        this:middleTextSize="34px"
+        this:onLeftViewClick="back"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10px"
+        android:background="@color/separator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title_account"
+            android:layout_width="94px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:gravity="left|center"
+            android:paddingBottom="26px"
+            android:paddingTop="26px"
+            android:text="@string/tv_sign_in_sign"
+            android:textColor="@color/text_mark"
+            android:textSize="28px"
+            />
+
+        <EditText
+            android:id="@+id/et_input_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12px"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="@string/input_phone_number"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingRight="18px"
+            android:textSize="26px"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_sign_in_verification"
+            android:layout_width="94px"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="50px"
+            android:paddingBottom="26px"
+
+            android:paddingTop="26px"
+            android:text="@string/verification"
+            android:textColor="@color/text_mark"
+            android:textSize="28px"/>
+
+        <EditText
+            android:id="@+id/et_sign_in_verification"
+            android:layout_width="412px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12px"
+            android:background="@null"
+            android:hint="@string/hint_input_verification"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingRight="18px"
+            android:textSize="26px"/>
+
+        <Button
+            android:id="@+id/btn_sign_in_get_verification"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="154px"
+            android:layout_height="46px"
+            android:layout_marginBottom="18px"
+            android:layout_marginRight="28px"
+            android:layout_marginTop="18px"
+            android:background="@drawable/selector_get_verification"
+            android:gravity="center"
+            android:text="@string/sign_in_get_verification"
+            android:textColor="@drawable/selector_text_red2white"
+            android:textSize="26px"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_sign_in_password"
+            android:layout_width="94px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:gravity="right|center"
+            android:paddingBottom="26px"
+            android:paddingTop="26px"
+            android:text="@string/tv_sign_in_password"
+            android:textColor="@color/text_mark"
+            android:textSize="28px"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/et_sign_in_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12px"
+                android:background="@null"
+                android:hint="@string/input_password"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingRight="18px"
+                android:textSize="26px"/>
+
+            <ImageButton
+                android:id="@+id/btn_activity_login_show_password"
+                android:layout_width="34px"
+                android:layout_height="34px"
+                android:layout_gravity="center|right"
+                android:layout_marginBottom="24px"
+                android:layout_marginRight="28px"
+                android:layout_marginTop="24px"
+
+                android:background="@mipmap/password_hide"
+                android:scaleType="centerCrop"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title_confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center"
+            android:paddingBottom="26px"
+            android:paddingTop="26px"
+            android:text="@string/sign_in_confirm_password"
+            android:textColor="@color/text_mark"
+            android:textSize="28px"/>
+
+        <FrameLayout
+            android:layout_width="604px"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/et_sign_in_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12px"
+                android:background="@null"
+                android:hint="@string/input_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingRight="18px"
+                android:textSize="26px"/>
+
+
+            <ImageButton
+                android:id="@+id/btn_activity_login_show_confirm_password"
+                android:layout_width="34px"
+                android:layout_height="34px"
+                android:layout_gravity="center|right"
+                android:layout_marginBottom="24px"
+                android:layout_marginRight="28px"
+                android:layout_marginTop="24px"
+                android:background="@mipmap/password_hide"
+                android:scaleType="centerCrop"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_margin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/separator"/>
+
+    <Button
+        android:id="@+id/btn_sign_in_submit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_marginLeft="28px"
+        android:layout_marginRight="28px"
+        android:layout_marginTop="95px"
+        android:background="@drawable/selector_btn_red2white"
+        android:text="@string/submit"
+        android:textColor="@drawable/selector_text_white2red"
+        android:textSize="30px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:text="@string/hint_submit"
+            android:textColor="@color/text_normal"
+            android:textSize="24px"/>
+
+        <TextView
+            android:id="@+id/tv_login_in_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/user_agreements"
+            android:textColor="@color/text_red"
+            android:textSize="24px"/>
+    </LinearLayout>
+</LinearLayout>

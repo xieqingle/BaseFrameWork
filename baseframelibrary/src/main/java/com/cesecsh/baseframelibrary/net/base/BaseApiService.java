@@ -38,6 +38,12 @@ public interface BaseApiService {
             @Path("url") String url,
             @Body Object object);
 
+    @POST("{url}")
+    Observable<ResponseBody> executePostBody(
+            @Path("url") String url,
+          /*  @Query("userName") String userName, @Query("userId") String userId,  @Query("time") String time, @Query("latitude") double latitude, @Query("longitude") double longitude*/
+          @QueryMap Map<String, Object> map);
+
     @GET()
     <T> Observable<ResponseBody> executeGet(
             @Url String url,

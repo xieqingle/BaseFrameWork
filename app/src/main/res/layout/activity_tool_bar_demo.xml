@@ -20,10 +20,10 @@
         >
         <!-- app:rightViewCheckBoxHeight="50dp"-->
         <!--app:rightViewCheckBoxWidth="50dp"-->
-        <com.cesecsh.test.toolBar.XToolBar
+        <com.cesecsh.baseframelibrary.ui.widget.toolBar.XToolBar
 
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="?actionBarSize"
             app:leftText="返回"
             app:leftTextGravity="left"
             app:leftViewMarginLeft="5dp"
@@ -41,7 +41,7 @@
             />
     </android.support.v7.widget.Toolbar>
 
-    <com.cesecsh.test.toolBar.XToolBar
+    <com.cesecsh.baseframelibrary.ui.widget.toolBar.XToolBar
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:layout_marginTop="5dp"
@@ -53,7 +53,7 @@
         app:rightViewMarginRight="5dp"
         />
 
-    <com.cesecsh.test.toolBar.XToolBar
+    <com.cesecsh.baseframelibrary.ui.widget.toolBar.XToolBar
         android:id="@+id/x_tool_bar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
@@ -66,7 +66,7 @@
         app:rightCheckBoxButton="@drawable/selector_collection_check_box"
         />
 
-    <com.cesecsh.test.toolBar.XToolBar
+    <com.cesecsh.baseframelibrary.ui.widget.toolBar.XToolBar
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:layout_marginTop="5dp"
@@ -77,4 +77,6 @@
         app:rightImageSrc="@mipmap/location"
         app:rightViewMarginRight="5dp"
         />
+
+
 </LinearLayout>

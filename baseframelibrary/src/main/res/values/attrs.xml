@@ -132,4 +132,167 @@
         <attr name="sb_background" format="reference|color" />
         <attr name="sb_enable_effect" format="reference|boolean" />
     </declare-styleable>
+
+    <!--超级标题栏-->
+    <declare-styleable name="XToolBar">
+        <!--left view-->
+        <!--image -->
+        <attr name="leftImageSrc" format="reference"/>
+        <attr name="leftImageWidth" format="dimension"/>
+        <attr name="leftImageHeight" format="dimension"/>
+
+        <!--text-->
+        <attr name="leftText" format="string"/>
+        <attr name="leftTextWidth" format="dimension"/>
+        <attr name="leftTextHeight" format="dimension"/>
+        <attr name="leftTextSize" format="dimension"/>
+        <attr name="leftTextColor" format="color"/>
+        <attr name="leftTextBackground" format="reference|color"/>
+        <attr name="leftTextGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr>
+        <attr name="leftViewPaddingLeft" format="dimension"/>
+        <attr name="leftViewPaddingTop" format="dimension"/>
+        <attr name="leftViewPaddingRight" format="dimension"/>
+        <attr name="leftViewPaddingBottom" format="dimension"/>
+        <attr name="leftViewMarginLeft" format="dimension"/>
+        <attr name="leftViewMarginTop" format="dimension"/>
+        <attr name="leftViewMarginRight" format="dimension"/>
+        <attr name="leftViewMarginBottom" format="dimension"/>
+
+
+        <!--middle View text-->
+        <attr name="middleText" format="string"/>
+        <attr name="middleTextWidth" format="dimension"/>
+        <attr name="middleTextHeight" format="dimension"/>
+        <attr name="middleTextSize" format="dimension"/>
+        <attr name="middleTextColor" format="color"/>
+        <attr name="middleTextMaxSize" format="dimension"/>
+        <attr name="middleTextPaddingLeft" format="dimension"/>
+        <attr name="middleTextPaddingTop" format="dimension"/>
+        <attr name="middleTextPaddingRight" format="dimension"/>
+        <attr name="middleTextPaddingBottom" format="dimension"/>
+        <attr name="middleTextMarginLeft" format="dimension"/>
+        <attr name="middleTextMarginTop" format="dimension"/>
+        <attr name="middleTextMarginRight" format="dimension"/>
+        <attr name="middleTextMarginBottom" format="dimension"/>
+        <attr name="middleTextLeftImage" format="reference"/>
+        <attr name="middleTextTopImage" format="reference"/>
+        <attr name="middleTextRightImage" format="reference"/>
+        <attr name="middleTextBottomImage" format="reference"/>
+        <attr name="middleTextGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr>
+        <!--middle view edit-->
+        <attr name="middleEditHint" format="string"/>
+        <attr name="middleEditText" format="string"/>
+        <attr name="middleEditBackground" format="reference"/>
+        <attr name="middleEditWidth" format="dimension"/>
+        <attr name="middleEditHeight" format="dimension"/>
+        <attr name="middleEditTextSize" format="dimension"/>
+        <attr name="middleEditColor" format="color|reference"/>
+        <attr name="middleEditPadding" format="dimension"/>
+        <attr name="middleEditMargin" format="dimension"/>
+        <attr name="middleEditPaddingLeft" format="dimension"/>
+        <attr name="middleEditPaddingTop" format="dimension"/>
+        <attr name="middleEditPaddingRight" format="dimension"/>
+        <attr name="middleEditPaddingBottom" format="dimension"/>
+        <attr name="middleEditMarginLeft" format="dimension"/>
+        <attr name="middleEditMarginTop" format="dimension"/>
+        <attr name="middleEditMarginRight" format="dimension"/>
+        <attr name="middleEditMarginBottom" format="dimension"/>
+        <attr name="middleEditLeftImage" format="reference"/>
+        <attr name="middleEditTopImage" format="reference"/>
+        <attr name="middleEditRightImage" format="reference"/>
+        <attr name="middleEditBottomImage" format="reference"/>
+        <attr name="middleEditGravity"  >
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr>
+
+        <!--right view-->
+        <!--image-->
+        <attr name="rightImageSrc" format="reference"/>
+        <attr name="rightImageWidth" format="dimension"/>
+        <attr name="rightImageHeight" format="dimension"/>
+        <attr name="leftImageBackground" format="reference|color"/>
+        <attr name="rightViewCheckBoxBackground" format="reference"/>
+        <attr name="rightViewIsCheck" format="boolean"/>
+        <attr name="rightViewCheckBoxWidth" format="dimension"/>
+        <attr name="rightViewCheckBoxHeight" format="dimension"/>
+        <attr name="rightCheckBoxButton" format="reference"/>
+
+        <!--text-->
+        <attr name="rightText" format="string"/>
+        <attr name="rightTextWidth" format="dimension"/>
+        <attr name="rightTextHeight" format="dimension"/>
+        <attr name="rightTextSize" format="dimension"/>
+        <attr name="rightTextColor" format="color"/>
+        <attr name="rightTextBackground" format="reference|color"/>
+        <attr name="rightTextGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="fill_horizontal" value="0x07"/>
+            <flag name="center" value="0x11"/>
+            <flag name="fill" value="0x77"/>
+            <flag name="clip_vertical" value="0x80"/>
+            <flag name="clip_horizontal" value="0x08"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr>
+        <attr name="rightViewPaddingLeft" format="dimension"/>
+        <attr name="rightViewPaddingTop" format="dimension"/>
+        <attr name="rightViewPaddingRight" format="dimension"/>
+        <attr name="rightViewPaddingBottom" format="dimension"/>
+        <attr name="rightViewMarginLeft" format="dimension"/>
+        <attr name="rightViewMarginTop" format="dimension"/>
+        <attr name="rightViewMarginRight" format="dimension"/>
+        <attr name="rightViewMarginBottom" format="dimension"/>
+        <!--onClick-->
+        <attr name="onLeftViewClick" format="string"/>
+        <attr name="onRightViewClick" format="string"/>
+    </declare-styleable>
 </resources>

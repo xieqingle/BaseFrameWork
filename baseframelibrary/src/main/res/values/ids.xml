@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="carouse_inner" type="id" />
+    <item name="carouse_inner" type="id"/>
+    <!--xToolBar id-->
+    <item name="left_text_view" type="id"/>
+    <item name="left_image_view" type="id"/>
+    <item name="middle_text_view" type="id"/>
+    <item name="middle_edit_view" type="id"/>
+    <item name="right_text_view" type="id"/>
+    <item name="right_image_view" type="id"/>
+    <item name="right_check_box_view" type="id"/>
+
 </resources>

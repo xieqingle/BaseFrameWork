@@ -15,7 +15,7 @@ public class ToolBarDemoActivity extends AppCompatActivity {
     @BindView(R.id.toolbar)
     Toolbar mToolbar;
     @BindView(R.id.x_tool_bar)
-    XToolBar mXToolBar;
+    com.cesecsh.baseframelibrary.ui.widget.toolBar.XToolBar mXToolBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

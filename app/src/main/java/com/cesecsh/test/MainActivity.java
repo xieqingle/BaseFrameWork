@@ -67,5 +67,9 @@ public class MainActivity extends PermissionActivity {
     public void onClick7(View view) {
         startActivity(new Intent(this, ToolBarDemoActivity.class));
     }
+
+    public void onClick8(View view) {
+        startActivity(new Intent(this, ScreenFitActivity.class));
+    }
 }
 

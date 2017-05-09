@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#df3031</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="main_color">#df3031</color>
+    <color name="separator">#e2e2e0</color>
+    <color name="text_mark">#333333</color>
+    <color name="btn_text_color">#df3031</color>
+    <color name="text_normal">#464646</color>
+    <color name="text_red">#df3031</color>
 </resources>

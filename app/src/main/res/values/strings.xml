@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">BaseFramework</string>
+    <string name="tb_sing_In_activity">注册</string>
+    <string name="tv_sign_in_sign">账&#160;&#160;&#160;&#160;号:</string>
+    <string name="input_phone_number">请输入手机号码</string>
+    <string name="verification">验证码:</string>
+    <string name="hint_input_verification">请输入验证码</string>
+    <string name="sign_in_get_verification">获取验证码</string>
+    <string name="tv_sign_in_password">密&#160;&#160;&#160;&#160;码:</string>
+    <string name="input_password">6–20位英文字母和数字组合</string>
+    <string name="sign_in_confirm_password">确认密码:</string>
+    <string name="submit">提交</string>
+    <string name="hint_submit">轻触上面的“提交”按钮，即表示你同意</string>
+    <string name="user_agreements">《振华智慧社区软件许可及服务协议》</string>
 </resources>
