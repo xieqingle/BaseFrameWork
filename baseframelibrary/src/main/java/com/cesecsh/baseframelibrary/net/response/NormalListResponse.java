@@ -17,14 +17,14 @@ import rx.Subscriber;
  * 该方法需要在service中使用NormalJson<List<T>>作为转换类</>
  */
 
-public abstract class NormalListResponse<T> extends Subscriber<NormalJson> {
+public abstract class NormalListResponse<T> extends Subscriber<NormalJson<List<T>>> {
 
     @Override
-    public void onNext(NormalJson normalJson) {
+    public void onNext(NormalJson<List<T>> normalJson) {
         if (normalJson != null) {
             switch (Integer.valueOf(normalJson.getCode())) {
                 case CodeState.SUCCESS:
-                    onSuccess((List<T>) normalJson.getObj());
+                    onSuccess(normalJson.getObj());
                     break;
                 case CodeState.LOGIN_OVERDUE:
                     AlertDialogManager.showLoginOverdue(ActivityManager.getInstance().getTaskTop());

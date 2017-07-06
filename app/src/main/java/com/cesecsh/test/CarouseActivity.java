@@ -9,8 +9,6 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.cesecsh.baseframelibrary.ui.widget.carouse.CarouseView;
-import com.cesecsh.baseframelibrary.ui.widget.carouse.HintView;
-import com.cesecsh.baseframelibrary.ui.widget.carouse.OnItemClickListener;
 import com.cesecsh.baseframelibrary.ui.widget.carouse.adapter.LoopPageAdapter;
 import com.cesecsh.baseframework.R;
 
@@ -38,12 +36,7 @@ public class CarouseActivity extends AppCompatActivity {
 //        carouseView.setHintView(hintView);
         carouseView.setAdapter(adapter);
         carouseView.setPlayDelay(1000);
-        carouseView.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(int position) {
-                Toast.makeText(CarouseActivity.this, "" + position, Toast.LENGTH_SHORT).show();
-            }
-        });
+        carouseView.setOnItemClickListener(position -> Toast.makeText(CarouseActivity.this, "" + position, Toast.LENGTH_SHORT).show());
 
     }
 

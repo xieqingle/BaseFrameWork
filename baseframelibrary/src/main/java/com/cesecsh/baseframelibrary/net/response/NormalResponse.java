@@ -14,14 +14,14 @@ import rx.Subscriber;
  * on 2016/12/29
  */
 
-public abstract class NormalResponse<T> extends Subscriber<NormalJson> {
+public abstract class NormalResponse<T> extends Subscriber<NormalJson<T>> {
 
     @Override
-    public void onNext(NormalJson normalJson) {
+    public void onNext(NormalJson<T> normalJson) {
         if (normalJson != null) {
             switch (Integer.valueOf(normalJson.getCode())) {
                 case CodeState.SUCCESS:
-                    onSuccess((T) normalJson.getObj());
+                    onSuccess(normalJson.getObj());
                     break;
                 case CodeState.LOGIN_OVERDUE:
                     AlertDialogManager.showLoginOverdue(ActivityManager.getInstance().getTaskTop());

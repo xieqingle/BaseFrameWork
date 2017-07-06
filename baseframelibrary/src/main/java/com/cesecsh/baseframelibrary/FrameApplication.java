@@ -10,14 +10,10 @@ import android.os.Handler;
  */
 
 public class FrameApplication {
-    public static int newCounts = 0;
     private static Context mContext;
     private static Handler mHandler;
     private static int mMainThreadId;
 
-    public static int getNewCounts() {
-        return newCounts;
-    }
 
     public static void init(Application application) {
         mContext = application.getApplicationContext();

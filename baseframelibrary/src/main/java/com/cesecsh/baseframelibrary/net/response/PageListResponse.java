@@ -15,10 +15,10 @@ import rx.Subscriber;
  * on 2016/12/29
  */
 
-public abstract class PageListResponse<T> extends Subscriber<PageListJson> {
+public abstract class PageListResponse<T> extends Subscriber<PageListJson<T>> {
 
     @Override
-    public void onNext(PageListJson pageListJson) {
+    public void onNext(PageListJson<T> pageListJson) {
         if (pageListJson != null) {
             switch (Integer.valueOf(pageListJson.getCode())) {
                 case CodeState.SUCCESS:
